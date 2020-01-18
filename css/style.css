@@ -1,0 +1,26 @@
+.jumbotron
+{
+    padding-bottom: 600px;
+}
+
+img
+{
+    position: absolute;
+}
+
+canvas
+{
+    padding-left: 500px;
+}
+
+.custom-range
+{
+    width: 90%;
+}
+
+menu
+{
+    width: 30%;
+    float: left;
+    position: absolute;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Odśwież</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" accept="image/*" oninput="IMGshow(this)"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</nav>
+<div class="jumbotron">
+    <h1 class="display-3">Obraz</h1>
+    <!--img src="img/65298539_1162842167233604_3762160823221354496_n.jpg" width="400" height="500" id="imgg"/-->
+    <img height="500" width="400" id="imgg"/>
+    <div id="wypelnienie"> tutaj wyświetli się załadowany obraz</div>
+    <canvas id="output" height="500"></canvas>
+    <br />
+    Canvas czasem odmawia posłuszeństwa, w takim wypadku proszę odświeżyć stronę <button id="f5">Odśwież</button>
+    <menu>
+        <label>skala odcieni szarości</label>
+        <input type = 'checkbox' id = 'gray'/><br />
+        <label>negatyw</label>
+        <input type = 'checkbox' id = 'neg'/><br />
+        <label>poziom czerwonego</label><br />
+        <input type="range" class="custom-range" id="r">
+        <button id = 'rreset'>reset</button><br />
+        <label>poziom zielonego</label><br />
+        <input type="range" class="custom-range" id="g">
+        <button id = 'greset'>reset</button><br />
+        <label>poziom niebieskiego</label><br />
+        <input type="range" class="custom-range" id="b">
+        <button id = 'breset'>reset</button><br />
+        <label>poziom przeźroczystości</label><br />
+        <input type="range" class="custom-range" id="a">
+        <button id = 'areset'>reset</button><br />
+        <label>poziom jasności</label><br />
+        <input type="range" class="custom-range" id="br">
+        <button id = 'brreset'>reset</button><br />
+        <button id = 'reset'>resetuj wszystko</button>
+    </menu>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
